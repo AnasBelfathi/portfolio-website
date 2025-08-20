@@ -36,7 +36,7 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import mistral from './mistral.png';
-import openai from './openai.png';
+import openai from './openai_2.png';
 import llama from './meta.png';
 import deepseek from './DeepSeek.png';
 import claude from './claude.png'
