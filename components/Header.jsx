@@ -53,6 +53,7 @@ const Header = () => {
       </motion.p>
 
       <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
+        {/* Contact me */}
         <motion.a
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -63,6 +64,21 @@ const Header = () => {
           Contact me <Image src={assets.right_arrow_white} alt='arrow right' className='w-4' />
         </motion.a>
 
+        {/* LinkedIn */}
+        <motion.a
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 1.1 }}
+          href="https://www.linkedin.com/in/anasbelfathi" 
+          target="_blank" 
+          rel="noreferrer"
+          className='px-10 py-3 rounded-full flex items-center gap-2 text-white'
+          style={{ backgroundColor: "#0A66C2" }}
+        >
+          LinkedIn <Image src={assets.linkedin_icon} alt='linkedin icon' className='w-4' />
+        </motion.a>
+
+        {/* Download CV */}
         <motion.a
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
