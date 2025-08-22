@@ -166,3 +166,37 @@ export const infoList = [
 export const toolsData = [
     assets.openai, assets.mistral, assets.llama, assets.deepseek, assets.claude
 ];
+
+
+export const conferenceData = [
+  {
+    title: "TALN 2024 — Toulouse",
+    role: "Speaker",
+    venue: "TALN",
+    year: "2024",
+    topic: "Rhetorical role labeling in long legal documents",
+    photo: "/conf-taln-2024.jpg",
+    slides: "/slides/TALN2024_Anas.pdf", // optionnel
+    video: ""                            // optionnel
+  },
+  {
+    title: "COLING 2025 — Abu Dhabi",
+    role: "Presenter",
+    venue: "COLING",
+    year: "2025",
+    topic: "Domain adaptation of LLMs for specialized corpora",
+    photo: "/conf-coling-2025.jpg",
+    slides: "",
+    video: "https://youtu.be/your-talk"  // optionnel
+  },
+  {
+    title: "EvalLLM 2025 — Workshop",
+    role: "Demo",
+    venue: "EvalLLM",
+    year: "2025",
+    topic: "Evaluation harness for IR/RAG with legal datasets",
+    photo: "/conf-evalllm-2025.jpg",
+    slides: "/slides/EvalLLM2025_Anas.pdf",
+    video: ""
+  }
+];
