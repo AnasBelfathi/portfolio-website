@@ -69,7 +69,7 @@ const Header = () => {
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.1 }}
-          href="https://www.linkedin.com/in/anasbelfathi" 
+          href="https://www.linkedin.com/in/anas-belfathi-631619224/" 
           target="_blank" 
           rel="noreferrer"
           className='px-10 py-3 rounded-full flex items-center gap-2 text-white'
