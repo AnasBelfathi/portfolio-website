@@ -170,12 +170,12 @@ export const toolsData = [
 
 export const conferenceData = [
   {
-    title: "TALN 2024 — Toulouse",
+    title: "ACL 2025 — Vienna",
     role: "Speaker",
     venue: "TALN",
-    year: "2024",
+    year: "2025",
     topic: "Rhetorical role labeling in long legal documents",
-    photo: "/conf-taln-2024.jpg",
+    photo: "/acl.jpg",
     slides: "/slides/TALN2024_Anas.pdf", // optionnel
     video: ""                            // optionnel
   },
