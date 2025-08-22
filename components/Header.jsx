@@ -75,7 +75,7 @@ const Header = () => {
           className='px-10 py-3 rounded-full flex items-center gap-2 text-white'
           style={{ backgroundColor: "#0A66C2" }}
         >
-          LinkedIn <Image src={assets.linkedin_icon} alt='linkedin icon' className='w-4' />
+          LinkedIn <Image src={assets.right_arrow_white} alt='linkedin icon' className='w-4' />
         </motion.a>
 
         {/* Download CV */}
