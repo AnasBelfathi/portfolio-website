@@ -11,6 +11,8 @@ import figma from './figma.png';
 import git from './git.png';
 import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
+import linkedin from './linkedin.png';
+
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
@@ -66,6 +68,7 @@ export const assets = {
     git,
     mongodb,
     right_arrow_white,
+    linkedin,
     logo,
     logo_dark,
     mail_icon,
