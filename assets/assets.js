@@ -87,34 +87,59 @@ export const assets = {
 };
 
 export const workData = [
-    {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
-    },
-    {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
-    },
-    {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
-    },
-]
+  {
+    title: 'LLM Domain Adaptation (Healthcare)',
+    description: 'Continual pretraining + PEFT',
+    bgImage: '/work-1.png',
+  },
+  {
+    title: 'RAG for Specialized Knowledge',
+    description: 'Hybrid search & query routing',
+    bgImage: '/work-2.png',
+  },
+  {
+    title: 'Evaluation & Safety Harness',
+    description: 'Hallucination, bias, toxicity tests',
+    bgImage: '/work-3.png',
+  },
+  {
+    title: 'Efficient Fine‑Tuning & Distillation',
+    description: 'Quantization & model serving',
+    bgImage: '/work-4.png',
+  },
+];
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
+  {
+    icon: assets.web_icon, // réutilise tes icônes existantes
+    title: 'LLM Domain Adaptation',
+    description:
+      'PEFT (LoRA/Adapters), continual pretraining & instruction tuning to adapt LLMs to legal/health/finance.',
+    link: '#contact',
+  },
+  {
+    icon: assets.mobile_icon,
+    title: 'RAG Architecture & Retrieval',
+    description:
+      'Indexing, hybrid search, query routing, grounding—and rigorous relevance evaluation.',
+    link: '#contact',
+  },
+  {
+    icon: assets.ui_icon,
+    title: 'Evaluation & Safety (Red Teaming)',
+    description:
+      'Adversarial prompts, hallucination/bias/toxicity checks, ablations and model cards.',
+    link: '#contact',
+  },
+  {
+    icon: assets.graphics_icon,
+    title: 'Efficient Fine‑Tuning & Serving',
+    description:
+      'Distillation, quantization, MoE routing, throughput/latency optimization for production.',
+    link: '#contact',
+  },
+];
+
 
 export const infoList = [
   {
