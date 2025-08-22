@@ -41,7 +41,7 @@ import llama from './meta.png';
 import deepseek from './DeepSeek.png';
 import claude from './claude.png'
 import conf_acl from './acl_2.jpg';
-import conf_icail from './icail.jpg';
+import conf_icail from './icail.jpeg';
 
 
 
