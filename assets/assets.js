@@ -42,6 +42,8 @@ import deepseek from './DeepSeek.png';
 import claude from './claude.png'
 import conf_acl from './acl_2.jpg';
 import conf_icail from './icail.jpeg';
+import conf_taln from './TALN.jpg';
+
 
 
 
@@ -90,6 +92,7 @@ export const assets = {
     right_arrow_bold_dark,
       conf_acl,
 conf_icail,
+conf_taln,
 };
 
 export const workData = [
@@ -196,12 +199,12 @@ export const conferenceData = [
     video: "https://youtu.be/your-talk"  // optionnel
   },
   {
-    title: "EvalLLM 2025 — Workshop",
-    role: "Demo",
-    venue: "EvalLLM",
+    title: "TALN 2025 — Marseille",
+    role: "Speaker",
+    venue: "TALN",
     year: "2025",
-    topic: "Evaluation harness for IR/RAG with legal datasets",
-    photo: "/conf-evalllm-2025.jpg",
+    topic: "Simple and Effective Context Retrieval for Sequencial Tasks",
+    photo: assets.conf_taln,
     slides: "/slides/EvalLLM2025_Anas.pdf",
     video: ""
   }
