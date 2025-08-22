@@ -181,6 +181,7 @@ export const conferenceData = [
     year: "2025",
     topic: "Rhetorical role labeling in long legal documents",
     photo: assets.conf_acl,
+    fit: "contain",
     slides: "/slides/TALN2024_Anas.pdf", // optionnel
     video: ""                            // optionnel
   },
@@ -192,6 +193,7 @@ export const conferenceData = [
     topic: "Domain adaptation of LLMs for specialized corpora",
     photo: "/conf-coling-2025.jpg",
     slides: "",
+    fit: "contain",
     video: "https://youtu.be/your-talk"  // optionnel
   },
   {
@@ -201,6 +203,7 @@ export const conferenceData = [
     year: "2025",
     topic: "Evaluation harness for IR/RAG with legal datasets",
     photo: "/conf-evalllm-2025.jpg",
+    fit: "contain",
     slides: "/slides/EvalLLM2025_Anas.pdf",
     video: ""
   }

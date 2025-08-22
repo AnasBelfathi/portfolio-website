@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react"
 
-const Work = ({ isDarkMode }) => {
+const Work = ({isDarkMode}) => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -36,8 +36,7 @@ const Work = ({ isDarkMode }) => {
         transition={{ delay: 0.7, duration: 0.5 }}
         className='text-center max-w-3xl mx-auto mt-5 mb-12 font-Ovo text-gray-700 dark:text-white/80'
       >
-        A selection of my recent conference presentations on LLM adaptation, evaluation,
-        and retrieval for specialized domains.
+        A selection of my recent conference presentations on LLM adaptation, evaluation and retrieval.
       </motion.p>
 
       <motion.div
@@ -46,66 +45,58 @@ const Work = ({ isDarkMode }) => {
         transition={{ delay: 0.9, duration: 0.6 }}
         className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'
       >
-        {conferenceData.map((conf, index) => (
-          <motion.article
-            key={index}
-            whileHover={{ y: -4, scale: 1.01 }}
-            transition={{ duration: 0.25 }}
-            className='rounded-2xl border border-gray-300 dark:border-white/20 overflow-hidden bg-white/80 dark:bg-white/5 backdrop-blur'
-          >
-            {/* Photo */}
-            <div className='relative w-full aspect-video'>
-              <Image
-                src={conf.photo}
-                alt={`${conf.title} photo`}
-                fill
-                className='object-cover'
-                sizes="(max-width: 768px) 100vw, 33vw"
-                priority={index === 0}
-              />
-              {/* Badges en overlay */}
-              <div className='absolute top-3 left-3 flex gap-2'>
-                <span className='px-2 py-1 text-xs rounded-full bg-black/80 text-white'>{conf.year}</span>
-                <span className='px-2 py-1 text-xs rounded-full bg-white/90 text-black shadow'>{conf.venue}</span>
-              </div>
-            </div>
-
-            {/* Contenu */}
-            <div className='p-5'>
-              <h3 className='text-lg font-semibold'>{conf.title}</h3>
-              <p className='mt-1 text-sm text-gray-600 dark:text-white/80'>
-                <strong>{conf.role}</strong> — {conf.topic}
-              </p>
-
-              {/* Actions conditionnelles */}
-              {(conf.slides || conf.video) ? (
-                <div className='mt-4 flex items-center gap-3'>
-                  {conf.slides ? (
-                    <a
-                      href={conf.slides}
-                      className='px-3 py-1.5 text-sm border rounded-full hover:-translate-y-0.5 transition'
-                      target='_blank' rel='noreferrer'
-                    >
-                      Slides
-                    </a>
-                  ) : null}
-                  {conf.video ? (
-                    <a
-                      href={conf.video}
-                      className='px-3 py-1.5 text-sm border rounded-full hover:-translate-y-0.5 transition'
-                      target='_blank' rel='noreferrer'
-                    >
-                      Video
-                    </a>
-                  ) : null}
+        {conferenceData.map((conf, i) => {
+          const fit = conf.fit === 'cover' ? 'object-cover' : 'object-contain'
+          return (
+            <motion.article
+              key={i}
+              whileHover={{ y: -4, scale: 1.01 }}
+              transition={{ duration: 0.25 }}
+              className='rounded-2xl border border-gray-300 dark:border-white/20 overflow-hidden bg-white/80 dark:bg-white/5 backdrop-blur'
+            >
+              {/* Frame photo : hauteur fixe + contain pour voir 100% de l'image */}
+              <div className='relative w-full h-56 sm:h-60 md:h-64 bg-gray-100 dark:bg-white/10'>
+                <Image
+                  src={conf.photo}
+                  alt={`${conf.title} photo`}
+                  fill
+                  className={`${fit} object-center p-1 rounded-xl`}
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  priority={i === 0}
+                />
+                <div className='absolute top-3 left-3 flex gap-2'>
+                  <span className='px-2 py-1 text-xs rounded-full bg-black/80 text-white'>{conf.year}</span>
+                  <span className='px-2 py-1 text-xs rounded-full bg-white/90 text-black shadow'>{conf.venue}</span>
                 </div>
-              ) : null}
-            </div>
-          </motion.article>
-        ))}
-      </motion.div>
+              </div>
 
-      {/* Bouton "Show more" retiré car inutile ici */}
+              <div className='p-5'>
+                <h3 className='text-lg font-semibold'>{conf.title}</h3>
+                <p className='mt-1 text-sm text-gray-600 dark:text-white/80'>
+                  <strong>{conf.role}</strong> — {conf.topic}
+                </p>
+
+                {(conf.slides || conf.video) ? (
+                  <div className='mt-4 flex items-center gap-3'>
+                    {conf.slides ? (
+                      <a href={conf.slides} target='_blank' rel='noreferrer'
+                         className='px-3 py-1.5 text-sm border rounded-full hover:-translate-y-0.5 transition'>
+                        Slides
+                      </a>
+                    ) : null}
+                    {conf.video ? (
+                      <a href={conf.video} target='_blank' rel='noreferrer'
+                         className='px-3 py-1.5 text-sm border rounded-full hover:-translate-y-0.5 transition'>
+                        Video
+                      </a>
+                    ) : null}
+                  </div>
+                ) : null}
+              </div>
+            </motion.article>
+          )
+        })}
+      </motion.div>
     </motion.section>
   )
 }
