@@ -40,6 +40,9 @@ import openai from './openai_2.png';
 import llama from './meta.png';
 import deepseek from './DeepSeek.png';
 import claude from './claude.png'
+import conf_acl from './acl.jpg';
+
+
 
 export const assets = {
     user_image,
@@ -83,7 +86,9 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+      conf_acl,
+
 };
 
 export const workData = [
@@ -175,7 +180,7 @@ export const conferenceData = [
     venue: "TALN",
     year: "2025",
     topic: "Rhetorical role labeling in long legal documents",
-    photo: "/acl.jpg",
+    photo: assets.conf_acl,
     slides: "/slides/TALN2024_Anas.pdf", // optionnel
     video: ""                            // optionnel
   },
