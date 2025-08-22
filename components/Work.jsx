@@ -76,29 +76,6 @@ const Work = ({ isDarkMode }) => {
               <p className='mt-2 text-sm md:text-base text-gray-600 dark:text-white/80'>
                 <strong>{conf.role}</strong> — {conf.topic}
               </p>
-
-              {(conf.slides || conf.video) ? (
-                <div className='mt-5 flex items-center gap-3'>
-                  {conf.slides ? (
-                    <a
-                      href={conf.slides}
-                      className='px-3 py-1.5 text-sm border rounded-full hover:-translate-y-0.5 transition'
-                      target='_blank' rel='noreferrer'
-                    >
-                      Slides
-                    </a>
-                  ) : null}
-                  {conf.video ? (
-                    <a
-                      href={conf.video}
-                      className='px-3 py-1.5 text-sm border rounded-full hover:-translate-y-0.5 transition'
-                      target='_blank' rel='noreferrer'
-                    >
-                      Video
-                    </a>
-                  ) : null}
-                </div>
-              ) : null}
             </div>
           </motion.article>
         ))}
