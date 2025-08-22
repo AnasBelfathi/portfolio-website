@@ -175,7 +175,7 @@ export const conferenceData = [
     venue: "TALN",
     year: "2025",
     topic: "Rhetorical role labeling in long legal documents",
-    photo: "./acl.jpg",
+    photo: "/acl.jpg",
     slides: "/slides/TALN2024_Anas.pdf", // optionnel
     video: ""                            // optionnel
   },
