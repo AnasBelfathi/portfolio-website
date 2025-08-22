@@ -41,6 +41,7 @@ import llama from './meta.png';
 import deepseek from './DeepSeek.png';
 import claude from './claude.png'
 import conf_acl from './acl_2.jpg';
+import conf_icail from './icail.jpg';
 
 
 
@@ -88,7 +89,7 @@ export const assets = {
     right_arrow_bold,
     right_arrow_bold_dark,
       conf_acl,
-
+conf_icail,
 };
 
 export const workData = [
@@ -177,20 +178,20 @@ export const conferenceData = [
   {
     title: "ACL 2025 — Vienna",
     role: "Speaker",
-    venue: "TALN",
+    venue: "ACL",
     year: "2025",
-    topic: "Rhetorical role labeling in long legal documents",
+    topic: "The Role of Context in long legal documents",
     photo: assets.conf_acl,
     slides: "/slides/TALN2024_Anas.pdf", // optionnel
     video: ""                            // optionnel
   },
   {
-    title: "COLING 2025 — Abu Dhabi",
-    role: "Presenter",
-    venue: "COLING",
+    title: "ICAIL 2025 — Chicago",
+    role: "Speaker",
+    venue: "ICAIL",
     year: "2025",
-    topic: "Domain adaptation of LLMs for specialized corpora",
-    photo: "/conf-coling-2025.jpg",
+    topic: "Domain adaptation of MLMs for specialized corpora",
+    photo: assets.conf_icail,
     slides: "",
     video: "https://youtu.be/your-talk"  // optionnel
   },
