@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 
 const Education = ({ isDarkMode }) => {
   // Si le logo n'est pas dans assets, mets l'image dans /public/sorbonne-logo.png
-  const sorbonneLogo = (assets as any).sorbonne_logo || '/sorbonne-logo.png';
+  const sorbonneLogo = assets.sorbonne_logo || '/sorbonne-logo.png';
 
   // Points forts (on remplace l'ancien infoList pour cette section)
   const eduHighlights = [
