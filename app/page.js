@@ -7,7 +7,7 @@ import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Services from "../components/Services";
 import Work from "../components/Work";
-import Education from "../components/Eduction"
+import Education from "../components/Education"
 
 export default function Home() {
 
