@@ -46,6 +46,7 @@ import conf_acl from './acl_2.jpg';
 import conf_icail from './icail.jpeg';
 import conf_taln from './TALN.jpg';
 import master_dip from './master.jpg';
+import sorbonne_logo from './sorbonne-logo.png';
 
 
 
@@ -97,7 +98,9 @@ export const assets = {
       conf_acl,
 conf_icail,
 conf_taln,
-master_dip
+master_dip,
+sorbonne_logo,
+
 };
 
 export const workData = [
