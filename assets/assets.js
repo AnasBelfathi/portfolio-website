@@ -45,6 +45,7 @@ import claude from './claude.png'
 import conf_acl from './acl_2.jpg';
 import conf_icail from './icail.jpeg';
 import conf_taln from './TALN.jpg';
+import master_dip from './master.jpg';
 
 
 
@@ -96,6 +97,7 @@ export const assets = {
       conf_acl,
 conf_icail,
 conf_taln,
+master_dip
 };
 
 export const workData = [
