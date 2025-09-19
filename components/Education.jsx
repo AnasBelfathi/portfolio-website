@@ -3,10 +3,10 @@ import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react"
 
-const About = ({ isDarkMode }) => {
+const Education = ({ isDarkMode }) => {
   return (
     <motion.div
-      id='about'
+      id='education'
       className='w-full px-[12%] py-10 scroll-mt-20'
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -27,7 +27,7 @@ const About = ({ isDarkMode }) => {
         transition={{ duration: 0.5, delay: 0.5 }}
         className='text-center text-5xl font-Ovo'
       >
-        About me
+        Education
       </motion.h2>
 
       <motion.div
@@ -107,4 +107,4 @@ const About = ({ isDarkMode }) => {
   )
 }
 
-export default About
+export default Education
