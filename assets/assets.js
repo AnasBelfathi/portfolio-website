@@ -47,6 +47,9 @@ import conf_icail from './icail.jpeg';
 import conf_taln from './TALN.jpg';
 import master_dip from './master.jpg';
 import sorbonne_logo from './sorbonne-logo.png';
+import tag_logo from './tag.png';
+import doc_logo from './doc.png';
+import search_logo from './search.png';
 
 
 
@@ -100,7 +103,9 @@ conf_icail,
 conf_taln,
 master_dip,
 sorbonne_logo,
-
+tag_logo,
+doc_logo,
+search_logo,
 };
 
 export const workData = [
@@ -160,19 +165,19 @@ export const serviceData = [
 
 export const infoList = [
   {
-    icon: assets.code_icon,
+    icon: assets.tag_logo,
     iconDark: assets.code_icon_dark,
     title: 'Text classification',
     description: 'Labeling and routing specialized documents with adapted LLMs'
   },
   {
-    icon: assets.project_icon,
+    icon: assets.doc_logo,
     iconDark: assets.project_icon_dark,
     title: 'Summarization',
     description: 'Domain-aware, factual summaries for research & industry'
   },
   {
-    icon: assets.edu_icon,
+    icon: assets.search_logo,
     iconDark: assets.edu_icon_dark,
     title: "Information retrieval",
     description: "LLM-assisted search and RAG for specialized knowledge"
