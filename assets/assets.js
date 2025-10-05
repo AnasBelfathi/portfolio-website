@@ -50,6 +50,10 @@ import sorbonne_logo from './sorbonne-logo.png';
 import tag_logo from './tag.png';
 import doc_logo from './doc.png';
 import search_logo from './search.png';
+import llm_logo from './llm.png';
+import evaluation_logo from './evaluation.png';
+import optimization_logo from './optimization.png';
+import rag_logo from './rag.png';
 
 
 
@@ -106,6 +110,10 @@ sorbonne_logo,
 tag_logo,
 doc_logo,
 search_logo,
+llm_logo,
+rag_logo,
+evaluation_logo,
+optimization_logo
 };
 
 export const workData = [
@@ -133,28 +141,28 @@ export const workData = [
 
 export const serviceData = [
   {
-    icon: assets.web_icon, // réutilise tes icônes existantes
+    icon: assets.llm_logo, // réutilise tes icônes existantes
     title: 'LLM Domain Adaptation',
     description:
       'PEFT (LoRA/Adapters), continual pretraining & instruction tuning to adapt LLMs to legal/health/finance.',
     link: '#contact',
   },
   {
-    icon: assets.mobile_icon,
+    icon: assets.rag_logo,
     title: 'RAG Architecture & Retrieval',
     description:
       'Indexing, hybrid search, query routing, grounding—and rigorous relevance evaluation.',
     link: '#contact',
   },
   {
-    icon: assets.ui_icon,
+    icon: assets.evaluation_logo,
     title: 'Evaluation & Safety (Red Teaming)',
     description:
       'Adversarial prompts, hallucination/bias/toxicity checks, ablations and model cards.',
     link: '#contact',
   },
   {
-    icon: assets.graphics_icon,
+    icon: assets.optimization_logo,
     title: 'Efficient Fine‑Tuning & Serving',
     description:
       'Distillation, quantization, MoE routing, throughput/latency optimization for production.',
